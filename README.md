@@ -6,7 +6,7 @@ Tipping bot for TrustWallet (https://trustwallet.com/)
 Bot discussion thread: BnbTelegramTipBot (https://t.me/BnbTelegramTipBot)
 
 
-Work in channels supportes (except TIP command)
+Work in channels supported (except TIP command)
 
 /start — Start dialog with Bot
 
