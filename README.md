@@ -28,6 +28,3 @@ Commands for common chats:
 Commands to do Airdrop for retweets
 /twit - start collection of retweets for a tweet (Usage: /twtweet tweet_URL)
 /twrtrain - call Rain for users who retweeted a tweet (Usage: /twrtrain value tweet_URL)
-
-
-
