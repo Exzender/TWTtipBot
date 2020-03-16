@@ -1,0 +1,37 @@
+{
+    "global": {
+        "debugMode": false,
+        "useProxy": false,
+        "deleteMessages": true,
+        "deleteInterval": 300000,
+        "giveAutoMult": 3600000,
+        "txInterval": 100,
+        "retweetInterval": 10,
+        "pm2name": "bnbBot",
+        "txExplorer": "https://explorer.binance.org/tx/",
+		"cmdMod": "tw"
+    },
+    "devFee": {
+        "wallet": "",
+        "devChat": 0,
+        "giveFee": 0,
+        "tipFee": 0,
+        "rainFee": 0
+    },
+    "tokens": {
+        "TWT": "TWT-8C2",
+        "BNB": "BNB"
+    },
+    "minValues": {
+        "TWT": 1,
+        "BNB": 0.001
+    },
+    "rpcServer": {
+        "host": "https://dex-european.binance.org"
+    },
+    "mongo": {
+        "host": "localhost",
+        "port": 27017,
+        "db": "bnbtipbot"
+    }
+}
