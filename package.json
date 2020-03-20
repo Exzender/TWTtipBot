@@ -1,6 +1,6 @@
 {
   "name": "twt_tip_bot",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Bot for telegram groups used for tipping in Binance Chain",
   "main": "index.js",
   "dependencies": {

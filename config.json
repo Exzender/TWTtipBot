@@ -30,8 +30,6 @@
         "host": "https://dex-european.binance.org"
     },
     "mongo": {
-        "host": "localhost",
-        "port": 27017,
         "db": "bnbtipbot"
     }
 }

@@ -12,16 +12,17 @@ const Twit = require('./tweets');
 
 helper.logStart();
 
+let token;
 // Globals
-const tokenFile = require('./bot_token.json');
-let token = tokenFile.botTokenAccess;
-if (token === 'PLEASE_WRITE_YOU_TOKEN_HERE') {
-    console.error('Error: Token is empty!\nPlease write your token in \'bot_token.json\' file.');
-    process.exit(1);
+if (process.env.BOT_TOKEN) {
+    token = process.env.BOT_TOKEN;
+} else {
+        console.error('Error: Token is empty!\nPlease set your token in BOT_TOKEN env variable');
+        process.exit(1);
 }
 
 const dbconfig = require('./config.json');
-const dburl = 'mongodb://' + dbconfig.mongo.host + ':' + dbconfig.mongo.port;
+const dburl = process.env.MONGO_URI ? process.env.MONGO_URI : 'mongodb://localhost:27017';
 const dbName = dbconfig.mongo.db;
 const rpcHost = dbconfig.rpcServer.host;
 const catchPhrases = require('./CatchPhrasesEn.json') ;

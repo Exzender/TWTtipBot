@@ -1,8 +1,18 @@
 const Twitter = require('twitter');
-const config = require('./twit_config.js');
 
 function TwObject() {
-    this.twitter = new Twitter(config);
+    if (process.env.TWIT_CON_KEY && process.env.TWIT_CON_SECRET && process.env.TWIT_ACCESS_KEY && process.env.TWIT_ACCESS_SECRET) {
+        let config = {
+            consumer_key: process.env.TWIT_CON_KEY,
+            consumer_secret: process.env.TWIT_CON_SECRET,
+            access_token_key: process.env.TWIT_ACCESS_KEY,
+            access_token_secret: process.env.TWIT_ACCESS_SECRET
+        };
+        this.twitter = new Twitter(config);
+    } else {
+        console.log('twitter variables are not set');
+        this.twitter = null;
+    }
 }
 
 TwObject.prototype.setParams = function setParams(params) {
