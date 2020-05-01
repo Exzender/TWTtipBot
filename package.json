@@ -1,10 +1,11 @@
 {
-  "name": "twt_tip_bot",
-  "version": "0.1.8",
+  "name": "bnb_tip_bot",
+  "version": "0.2.8",
   "description": "Bot for telegram groups used for tipping in Binance Chain",
   "main": "index.js",
   "dependencies": {
     "@binance-chain/javascript-sdk": "^2.16.3",
+    "express": "^4.17.1",
     "mongodb": "^3.4.0",
     "node-telegram-bot-api": "^0.40.0",
     "socks5-https-client": "^1.2.1",
@@ -14,7 +15,9 @@
     "nodemon": "^1.19.4"
   },
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Avis",
   "license": "ISC"

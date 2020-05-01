@@ -1,6 +1,6 @@
 {
      "startCommand" : [
-        "Hello! I am a tipping Bot \uD83D\uDCCA for Binance Chain!"
+        "Hello! I am a tipping Bot \uD83D\uDCCA for Trust Wallet users!"
     ],
 
   "debugCommandMessages" : [
@@ -26,7 +26,7 @@
   "privateDialogMessages" : [
     "Please enter the value of coins You want to use in TIP and GIVEAWAY commands by Default:",
     "Wrong value. Please, enter another:",
-    " coins will be used in TIP and GIVEAWAY commands, if value is omitted",
+    " will be used in TIP and GIVEAWAY commands",
     "You already have funds in staking contract. You will lose your staking reward if you make a new deposit into the contract. You should withdraw your staking reward first or use a another account for a new staking deposit",
     "Your funds will be locked for 27 days and you will be unable to withdraw within the locking period\nYou need to pay transaction fees to start staking, withdraw your stake, or claim staking rewards! Make sure that you have enough funds left on your balance to perform these transactions.\nStaking rewards are very unpredictable and the amount of reward depends on the time when you are claiming it",
     "Staking round is in progress. Please wait",
@@ -46,11 +46,11 @@
     "You will withdraw your stake from the cold staking contract: <code>0xd813419749b3c2cDc94A2F9Cfcf154113264a9d6</code>",
     "❗️Warning: After withdrawing, your will get back all your initial investment and receive all staking reward. Current staking round will be cancelled.",
     "Admin functions enabled",
-    "Welcome to Binance Chain tip bot. Use /help command to get additional Info",
-    "Enter your BNB address.\n",
-    "This address will be used to receive Tokens.",
+    "Welcome to Trust Wallet tip bot. Use /help command to get additional Info. Note: bot works with Trust Wallet address. Please, DO NOT use address form other wallets, especially Exchanges",
+    "Enter your Trust Wallet address.\n",
+    "This address will be used to receive Tokens.\nPlease do not use Exchange wallet address",
     "Your current BNB/TWT wallet address in Trust:\n",
-    "You can change address. Just send me another BNB or TWT wallet address in Trust",
+    "You can change address.\nJust send me another BNB or TWT wallet address in Trust\nPlease do not use Exchange wallet address",
     "Successfully set wallet address !",
     "Send me your seed-phrase to enable Transactions from your BNB/TWT Wallet",
     "Your have set full access for address:\n",
@@ -60,7 +60,9 @@
     "Can not recover Wallet from your seed-phrase",
     "Please enter the Token you want to use by Default:",
     "Selected token for use in operations = ",
-    "To switch token - click appropriate button"
+    "To switch token - click appropriate button",
+    " will be used in RAIN commands",
+    "Provided address is likely an Exchange one - bot can not work with such type of address"
   ],
 
   "twitterMessages" : [
@@ -86,7 +88,8 @@
     "\uD83D\uDD11 Set PrivateKey",
     "\uD83D\uDD4A Twitter Name",
     "\uD83D\uDCDD Operations history",
-    "\uD83D\uDD01 Switch coin/token"
+    "\uD83D\uDD01 Switch coin/token",
+    "\uD83D\uDEE0 Default values"
   ],
 
   "stakingKeyboard" : [
@@ -124,7 +127,8 @@
       "/zzgivestop - command to STOP /zzgiveauto",
       "/zzrain - spread some N coins among X users",
       "( Usage: <code>/zzrain value NUMBER_of_Users</code> )",
-      "( instead of NUMBER_of_Users may use <code>ALL</code> or <code>MAX</code> replacement - to use all available users of current chat ) ",
+      "( instead of NUMBER_of_Users may use <code>ALL</code> or <code>MAX</code> replacement - to use all available users of current chat )",
+      "( if <code>value</code> param is omitted - <b>default</b> Rain value will be used )",
       "( function can take a long time ) ",
       "/zztweet or /zztwit - start monitoring of retweets",
       "( Usage: <code>/zztweet value tweet_URL</code> - monitor tweet_URL with target retweets count set to VALUE )",
@@ -134,14 +138,15 @@
       "/zzrtrain - similar to RAIN but with retweets check",
       "( Usage: <code>/zzrtrain value tweet_URL</code> )",
       "( only those users, who linked their tip bot's account with Twitter and retweeted the Tweet will receive Rain )",
+      "( if <code>value</code> param is omitted - <b>default</b> Rain value will be used )",
       "",
       "tip author: <code>bnb1ddj9wx2hpvndk8tttr63wy06d2hzjs5qavdpac</code>"
     ],
 
     "helpCommandAdmin" : [
       "",
-      "/message - послать пользователю сообщение через Боты (param1 - ID юзера, param2 - текст)",
-      "/chatlist - список известных чатов и их ID",
+      "/message - send message from bot to user (param1 - ID user, param2 - text)",
+      "/chatlist - list known chats ID",
       "/config - view current config",
       "/msgallchats - Send message to All chats",
       "/msgallusers -  Send message to All users",
